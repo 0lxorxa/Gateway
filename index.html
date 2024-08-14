@@ -27,7 +27,7 @@
          url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.woff') format('woff'),
          url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.ttf') format("truetype");
     font-display: swap;
-} 
+    } 
     @font-face{
     src: url("PowerGrotesk-Regular.ttf");
     font-family: "PowerGrotest";
@@ -36,6 +36,7 @@
         margin: 0px;
         padding: 0px;
         background-color: black;
+        overflow-x: hidden;
 
     }
     .pagesection{
@@ -138,8 +139,21 @@
         margin-left: 20.8px;
         margin-top: 62.4px;
     }
-    .scrollsec::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 1);
+
+    .input{
+        border: 0;
+        color: grey;
+        font-family: 'NanumSquare', sans-serif ;
+        font-size: 24px;
+        padding-left: 20.42px;
+    }
+
+    .input::placeholder{
+        color: #0000D8;
+        font-family: 'NanumSquare', sans-serif ;
+        font-size: 24px;
+    }
+
 
 </style>
 
@@ -289,17 +303,24 @@
                 </div>
 
                 <div style="height: 106px; margin-top: 134px; margin-left: 54.6px; display: block; position: absolute; z-index: 2;">
-                    <span class="light" style="color: white; letter-spacing: -0.5px; font-family: 'NanumSquare'; font-size: 19.2px ;"> Gateway를 통해 즐길 수 있는 액티비티를 둘러보세요! <br>
+                    <span class="light" style="color: white; letter-spacing: -0.5px; font-family: 'NanumSquare'; font-size: 19.2px;  white-space:nowrap;"> Gateway를 통해 즐길 수 있는 액티비티를 둘러보세요! <br>
                         작성하신 메일로 서비스 소개서 및 견적서를 받아볼 수 있습니다.</span>
                 </div>
 
-                <div class="scrollsec" style="font-size: 0px; width: 571px; height: 317px; margin-top: 218px; margin-left: 17.6px;
+                <div class="scrollsec" style="font-size: 0px; width: 571px; height: 317px; margin-top: 218px; margin-left: 20.8px;
                 white-space:nowrap; overflow-y: scroll; display: block; position: absolute; z-index: 2;"> <!--여백제거실패-->
                     <img src="Img/resrv001.png" height="317px" style="">
                     <img src="Img/resrv002.png" height="317px" style="">
                     <img src="Img/resrv003.png" height="317px" style="">
                 </div>
 
+                <div style="margin-top: 604px; display: block; position: absolute; z-index: 2;  white-space:nowrap;">
+                    <input class="input" placeholder="성" type="test" style="margin-left: 23.2px; width: 260px; height: 55.2px; border-radius: 100px;">
+                    <input class="input" placeholder="이름" type="test" style="width: 260px; height: 55.2px; border-radius: 100px;"> <br>
+                    <input class="input" placeholder="핸드폰 번호" type="test" style="margin-top: 11.2px; margin-left: 23.2px; width: 545px; height: 55.2px; border-radius: 100px;"> <br>
+                    <input class="input" placeholder="E-mail" type="test" style="margin-top: 11.2px; margin-left: 23.2px; width: 545px; height: 55.2px; border-radius: 100px;">
+    
+                </div>
 
             </div>
 
